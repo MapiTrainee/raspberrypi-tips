@@ -23,6 +23,7 @@ echo>W:\ssh
 #sudo iwlist wlan0 scan
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 [ROOT] wpa_passphrase "ssid" "password" >> /etc/wpa_supplicant/wpa_supplicant.conf
+sudo wpa_cli reconfigure
 ```
 
 ## Using a standard web cam
