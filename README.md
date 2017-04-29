@@ -13,10 +13,30 @@ active
 format FS=FAT32 quick
 assign letter=W
 ```
-
-### Enable SSH before turning on the PI
+### Enabling SSH before turning on the PI
 ```
 echo>W:\ssh
+```
+### Configuration
+```
+sudo raspi-config
+```
+### Setting static network address
+```
+sudo nano /etc/dhcpcd.conf
+```
+```
+interface eth0
+
+static ip_address=192.168.1.100/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1
+
+interface wlan0
+
+static ip_address=192.168.1.200/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1
 ```
 ### Setting WiFi
 ```
