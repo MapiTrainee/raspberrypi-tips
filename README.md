@@ -2,7 +2,6 @@
 
 ## Raspbian installation
 ### Formatting SD card with diskpart on Windows 10
-
 ```
 cmd -> diskpart
 list disk
@@ -15,9 +14,13 @@ format FS=FAT32 quick
 assign letter=W
 ```
 
+### Enable SSH before turning on the PI
+```
+echo>W:\ssh
+```
+
 ## Using a standard web cam
 _Used camer: Msonic MR1803E_
-
 ```
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install fswebcam
