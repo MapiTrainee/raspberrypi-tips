@@ -18,6 +18,12 @@ assign letter=W
 ```
 echo>W:\ssh
 ```
+### Setting WiFi
+```
+#sudo iwlist wlan0 scan
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+[ROOT] wpa_passphrase "ssid" "password" >> /etc/wpa_supplicant/wpa_supplicant.conf
+```
 
 ## Using a standard web cam
 _Used camer: Msonic MR1803E_
