@@ -1,5 +1,20 @@
 # raspberrypi-tips
 
+## Raspbian installation
+### Formatting SD card with diskpart on Windows 10
+
+```
+cmd -> diskpart
+list disk
+select disk #sd_card_disk_number
+clean
+create partition primary
+select partition 1
+active
+format FS=FAT32 quick
+assign letter=W
+```
+
 ## Using a standard web cam
 _Used camer: Msonic MR1803E_
 
