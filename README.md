@@ -13,6 +13,7 @@ active
 format FS=FAT32 quick
 assign letter=W
 ```
+### Using Win32DiskImager to write Raspbian to SD Card
 ### Enabling SSH before turning on the PI
 ```
 echo>W:\ssh
