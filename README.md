@@ -47,6 +47,13 @@ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 sudo wpa_cli reconfigure
 ```
 
+## Startup
+```
+sudo nano /etc/rc.local
+sudo java -jar App.jar &
+sudo reboot
+```
+
 ## Using a standard web cam
 _Used camer: Msonic MR1803E_
 ```
