@@ -32,6 +32,7 @@ sudo raspi-config
 sudo nano /etc/dhcpcd.conf
 ```
 ```
+#SAMPLE CONFIGURATION 
 interface eth0
 
 static ip_address=192.168.1.100/24
@@ -46,9 +47,8 @@ static domain_name_servers=192.168.1.1
 ```
 ### Setting WiFi
 ```
-#sudo iwlist wlan0 scan
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
-[ROOT] wpa_passphrase "ssid" "password" >> /etc/wpa_supplicant/wpa_supplicant.conf
+[ROOT] wpa_passphrase your_ssid your_psk >> /etc/wpa_supplicant/wpa_supplicant.conf
 sudo wpa_cli reconfigure
 ```
 
