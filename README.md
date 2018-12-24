@@ -1,9 +1,9 @@
 # raspberrypi-tips
 
 ## Raspbian installation
-### Formatting SD card with diskpart on Windows 10
+### Formatting SD card with diskpart on Windows 10 
 ```
-cmd -> diskpart
+WIN + R diskpart
 list disk
 select disk #sd_card_disk_number
 clean
@@ -14,11 +14,16 @@ format FS=FAT32 quick
 assign letter=W
 ```
 ### Using Win32DiskImager to write Raspbian to SD Card
+```
+SELECT image e.g. Raspbian-Stretch-Lite.img
+SELECT device [W:\]
+WRITE
+```
 ### Enabling SSH before turning on the PI
 ```
 echo>W:\ssh
 ```
-### Configuration
+## System configuration
 ```
 sudo raspi-config
 ```
