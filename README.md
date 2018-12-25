@@ -32,7 +32,7 @@ sudo raspi-config
 sudo nano /etc/dhcpcd.conf
 ```
 ```
-#SAMPLE CONFIGURATION 
+# <== SAMPLE CONFIGURATION ==>
 interface eth0
 
 static ip_address=192.168.1.100/24
@@ -50,6 +50,12 @@ static domain_name_servers=192.168.1.1
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 [ROOT] wpa_passphrase your_ssid your_psk >> /etc/wpa_supplicant/wpa_supplicant.conf
 sudo wpa_cli reconfigure
+```
+
+## Java 8 installation
+```
+sudo apt-get install oracle-java8-jdk
+java -version
 ```
 
 ## Startup
