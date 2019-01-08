@@ -73,6 +73,15 @@ sudo apt-get install fswebcam
 fswebcam -r 640x480 --no-banner myimage.jpg
 ```
 
+## Using a true color RGB LED HAT ([wiki](https://www.waveshare.com/wiki/RGB_LED_HAT))
+```
+sudo apt-get install build-essential python-dev scons swig
+git clone https://github.com/jgarff/rpi_ws281x.git
+cd rpi_ws281x-master
+sudo scons
+sudo ./test -x 8 -y 4 -c
+```
+
 ## Check public IP
 ```
 curl ipinfo.io/ip
