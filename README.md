@@ -86,3 +86,11 @@ sudo ./test -x 8 -y 4 -c
 ```
 curl ipinfo.io/ip
 ```
+
+## Backup with Win32DiskImager
+```
+CREATE NEW FILE rpi.img
+SELECT image e.g. rpi.img
+SELECT device [W:\]
+READ
+```
